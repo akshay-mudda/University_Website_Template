@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University design template</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about-us.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Certificates & Online Programs</h1>
+        </header>
+
+        <!--blog page content-->
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg">
+                    <h2>Our Certificates & Online Programs</h2>
+                    <p>At our university, we offer a diverse range of certificates and online programs designed to empower learners with knowledge and skills for today's dynamic world. Whether you're seeking professional development, a career change, or expanding your expertise, our certificates provide a convenient and flexible option to achieve your goals.</p>
+                    <br>
+                    <p>Our online programs are built on a foundation of academic excellence and technological innovation. With the freedom to study from anywhere, you can access world-class education, connect with expert faculty, and collaborate with peers globally, all while maintaining your busy schedule.</p>
+                    <br>
+                    <p>From specialized certificates in emerging fields to comprehensive online degrees, we cater to a variety of educational needs. Our commitment to quality education, paired with the convenience of online learning, makes our certificates and online programs an ideal choice for those looking to advance their careers and embrace lifelong learning.</p>
+                    <br>
+                    <p>Explore our catalog of certificates and online programs to find the perfect fit for your educational journey. Join our vibrant online community and gain the knowledge and skills you need to thrive in the modern world.</p>
+                    <div class="comment-box">
+                        <h3>Leave a Comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter Email">
+                            <textarea rows="5" placeholder="Your Comment"></textarea>
+                            <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Cloud Computing</span>
+                        <span>40</span>
+                    </div>
+                    <div>
+                        <span>Chip Designing</span>
+                        <span>23</span>
+                    </div>
+                    <div>
+                        <span>Ui/Ux Designing</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>Dev-Ops</span>
+                        <span>20</span>
+                    </div>
+                    <div>
+                        <span>MBA (HR)</span>
+                        <span>35</span>
+                    </div>
+                    <div>
+                        <span>Fashion Designing</span>
+                        <span>05</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--footer-->
+        <footer class="footer">
+            <h4>About Us</h4>
+            <p>"Committed to Excellence, Inspiring Futures."</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-youtube-play"></i>
+            </div>
+            <p><i class="fa fa-copyright"></i> Copyright AKSHAY MUDDA 2023</p>
+        </footer>
+
+        <!--Javascript for toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            
+        </script>
+    </body>
+</html>

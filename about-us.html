@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University design template</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about-us.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </header>
+        
+        <!--about us content-->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the world's largest University</h1>
+                    <p>Founded on a vision of boundless knowledge and limitless opportunities, we proudly stand as the world's largest university. With an unwavering commitment to education, research, and innovation, we have grown to unparalleled dimensions, welcoming students from every corner of the globe. Our vast academic landscape, enriched by diversity and excellence, offers an unparalleled educational experience. As the largest university globally, we remain dedicated to shaping the leaders of tomorrow, fostering intellectual growth, and propelling the frontiers of human understanding. Join us on this extraordinary journey as we redefine what's possible in higher education.</p>
+                    <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg" alt="about us">
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <footer class="footer">
+            <h4>About Us</h4>
+            <p>"Committed to Excellence, Inspiring Futures."</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-youtube-play"></i>
+            </div>
+            <p><i class="fa fa-copyright"></i> Copyright AKSHAY MUDDA 2023</p>
+        </footer>
+
+        <!--Javascript for toggle menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            
+        </script>
+    </body>
+</html>
